@@ -2,9 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 import {backendUrl, currency} from '../App'
 import {toast} from 'react-toastify'
-import {Link} from 'react-router-dom'
 import { AdminContext } from '../context/AdminContext'
-import { MdOutlineEdit } from "react-icons/md";
 
 const List = ({token}) => {
 
@@ -71,10 +69,6 @@ const List = ({token}) => {
               <p>{item.category}</p>
               <p>{currency}{item.price}</p>
               <div className="flex justify-end md:justify-center space-x-4 text-md">
-                <Link to={`/update/${item._id}`} className="cursor-pointer pt-1 pr-3">
-                  <MdOutlineEdit />
-                </Link>
-                | {/* Vertical line */}
                 <p onClick={() => removeProduct(item._id)} className="cursor-pointer">
                   X
                 </p>
