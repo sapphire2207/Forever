@@ -43,6 +43,8 @@ const Navbar = () => {
           <p>CONTACT</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
         </NavLink>
+
+        <a href="https://forever-admin-tawny.vercel.app/" target="_blank" class="border px-5 text-xs py-1 rounded-full -mt-2"><p class="mt-1">Admin Panel</p></a>
       </ul>
 
       <div className="flex items-center gap-6">
